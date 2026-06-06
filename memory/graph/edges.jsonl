@@ -1,0 +1,17 @@
+{"source":"memory-lancedb","target":"dashscope-embedding","type":"depends_on","reason":"memory-lancedb 使用 dashscope text-embedding-v4 替代 OpenAI embedding，无需额外 API Key"}
+{"source":"memory-lancedb","target":"memory-core","type":"contradicts","reason":"memory-lancedb 和 memory-core 都是 kind=memory 插件，只能选一个。memory-lancedb 提供更丰富的向量存储和自动召回"}
+{"source":"plugins.slots.memory","target":"memory-core","type":"contradicts","reason":"sigmoid 重启前默认使用 memory-core，导致了 memory-lancedb 被禁用。需用 openclaw config set plugins.slots.memory memory-lancedb 切换"}
+{"source":"rhui1987","target":"888JQJL","type":"contradicts","reason":"rhui1987是VIP会员可用，888JQJL是试用账号会被限制弹窗"}
+{"source":"tencent-docs","target":"mcporter","type":"depends_on","reason":"tencent-docs MCP 通过 mcporter 进行 OAuth 认证和 API 调用"}
+{"source":"elite-longterm-memory","target":"memory-lancedb","type":"relates_to","reason":"elite-longterm-memory 的架构设计理念（分层记忆+WAL）被吸收进 OpenClaw 的记忆升级方案A，而非直接安装使用"}
+{"source":"SESSION-STATE.md","target":"memory-compaction","type":"fixes","reason":"WAL 写前日志协议确保关键上下文在 compaction 后不会丢失"}
+{"source":"auto-facts","target":"memory/facts/","type":"depends_on","reason":".scripts/extract_facts.py 自动提取的事实存入 memory/facts/ 目录"}
+{"source":"typed-edges","target":"knowledge-graph","type":"implements","reason":"用类型化边（causes/fixes/contradicts/depends_on）实现轻量知识图谱，不引入 Neo4j"}
+{"source": "会", "target": "员", "type": "contradicts", "timestamp": "2026-04-27 02:20"}
+{"source": ".learnings/HOT_FIX.jsonl", "target": ".learnings/WEEKLY_REFLECTION.md", "type": "promotes_to", "weight": 1, "desc": "重复3+次的HOT_FIX升级到WEEKLY反思"}
+{"source": ".learnings/WEEKLY_REFLECTION.md", "target": ".learnings/permanent/", "type": "promotes_to", "weight": 1, "desc": "周反思中的稳定模式升级为永久行为规则"}
+{"source": "memory/playbooks/", "target": "SOUL.md", "type": "implements", "weight": 1, "desc": "playbook自愈策略需回写到SOUL.md错误分型段"}
+{"source": "crystalized-skills/", "target": "AGENTS.md", "type": "implements", "weight": 1, "desc": "结晶Skill反映在AGENTS.md的编排能力中"}
+{"source": "extract_facts.py", "target": "memory/", "type": "automates", "weight": 1, "desc": "自动从对话提取事实并分类存储"}
+{"source": "evolution_gc.py", "target": ".scripts/", "type": "audits", "weight": 1, "desc": "定期GC/维护进化体系各子系统"}
+{"source": "WEEKLY_REFLECTION.md", "target": "SOUL.md", "type": "promotes_to", "weight": 1, "desc": "周反思的稳定行为模式应升级为SOUL.md执行纪律"}
