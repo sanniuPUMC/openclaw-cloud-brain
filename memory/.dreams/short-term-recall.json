@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-26T13:53:00.394Z",
+  "entries": {
+    "memory:memory/2026-04-08.md:1:24": {
+      "key": "memory:memory/2026-04-08.md:1:24",
+      "path": "memory/2026-04-08.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "### [2026-04-08 14:55] Pre-compaction Memory Flush #### 1. 导师申请线 (CPSD Mentor Strategy) - **李国新院长 (Li Guoxin)**: - **定位**: 强调“外科医生+独立闭环开发力”。 - **话术**: 突出协和外科学博背景，自学掌握医学算法与硬件原型全流程，定位为“不求人、能闭环”的临床科学家。 - **状态**: 微信申请（校友背书版）与开场白（专业闭环版）已就绪。 - **傅阳心教授 (Fu Yangxin)**: - **定位**: 强调“神经-免疫轴分型证据+AI分子网络逆转能力”。 - **话术**: 基于 Nature 算法改造 Transformer 框架，解析高维免疫网络扰动，对标顶刊研究趋势（神经-免疫轴）。 - **状态**: 微信开场白（学术前沿/机制逆转版）已就绪。 #### 2. 期权交易线 (Options Rebalance) - **Portfolio B (META)**: - **状态**: 收益率 197%~235%，浮盈 ~$4,933。 - **决策**: 计划强制止盈抽水 $3,000，锁定 235% 战果。 - **HSBC (汇丰)**: - **状态**: 多头盈利 $1800，空头 $800。 - **策略**: 建议 Roll Up Call（行权价上移），物理套现 ~$1,200 利润以防暴跌。 - **新布局 (UBER)**:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36345491409301756,
+      "maxScore": 0.36345491409301756,
+      "firstRecalledAt": "2026-04-14T13:19:12.312Z",
+      "lastRecalledAt": "2026-04-14T13:19:12.312Z",
+      "queryHashes": [
+        "ca611ceef727"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "网络",
+        "pre-compaction",
+        "神经-免疫轴分型证据",
+        "神经-免疫轴",
+        "学术前沿/机制逆转版",
+        "pre",
+        "compaction",
+        "flush"
+      ]
+    },
+    "memory:memory/2026-04-11.md:1:21": {
+      "key": "memory:memory/2026-04-11.md:1:21",
+      "path": "memory/2026-04-11.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "### 2026-04-11 09:34 状态同步 - 环境加固与自动化验证 #### 1. 核心系统状态 (Durable State) - **FutuOpenD**: 经修复，目前运行在实显桌面 `:0` (GNOME)，监听端口 `11111` 正常，支持 VNC 直观查看。 - **浏览器环境**: - 已彻底移除报错频繁的 Snap 版 Chromium。 - 切换为官方 .deb 版 Google Chrome (`/usr/bin/google-chrome`)。 - 已补完 Playwright/Browser Use 的所有系统底层依赖。 - PVE 兼容性对策：默认使用 `--disable-gpu` 运行，规避虚拟显卡崩溃风险。 - **API 凭证**: `BROWSER_USE_API_KEY` 已安全持久化至 `.env` 文件。 #### 2. 最近决策与配置 (Decisions & Configs) - **防休眠机制**: 已执行 `systemctl mask sleep` 系列命令，确保 GNOME 桌面环境在 VNC 断开后不会挂起，保障后端交易进程及自动化任务的“长跑”性能。 - **自动化路径**: 脚本已统一指定 `DISPLAY=:0` 和显式 `executable_path=\"/usr/bin/google-chrome\"`。 #### 3. 工具与脚本 (Scaffolding) - `scripts/run_browser_use_vnc.py`: 实现了由 Browser Use 驱动的 UI",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36811366975307463,
+      "maxScore": 0.36811366975307463,
+      "firstRecalledAt": "2026-04-23T04:01:44.954Z",
+      "lastRecalledAt": "2026-04-23T04:01:44.954Z",
+      "queryHashes": [
+        "ce7d1d3218f3"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "usr/bin/google-chrome",
+        "playwright/browser",
+        "disable-gpu",
+        "browser-use-api-key",
+        "executable-path",
+        "scripts/run-browser-use-vnc.py",
+        "状态",
+        "同步"
+      ]
+    },
+    "memory:memory/2026-04-09.md:29:40": {
+      "key": "memory:memory/2026-04-09.md:29:40",
+      "path": "memory/2026-04-09.md",
+      "startLine": 29,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "- **环境优化**：通过抹除 `$HOME/.hindsight-docker` 和 `./pgdata` 彻底解决了残留文件导致的数据库 IO 冲突与连接重置问题。 ### 2. OpenClaw 官方动态情报 (GitHub 穿透分析) - **核心进化信号**： - **LocalAI 集成**：官方正在推进对 LocalAI 的原生支持，预示着 OpenClaw 将具备“全本地化”运行能力。 - **环境迁移优化**：正在修复跨操作系统（macOS/Linux）迁移配置时导致的路径冲突问题。 - **通信规范化**：正在通过规范化 Gateway 消息语义，提升 Agent 遇到拦截时的反馈准确性。 ### 3. 资产与策略状态 - **黄金策略**：确认保留黄金相关头寸，执行“不执行 24597 瑞银沽止盈”指令。 - **操作准则**：在 Hindsight 运行期间，优先通过其“双云模式”进行知识灌喂，强化“清华医工交叉转化”及“王犇个人实践经验”的结构化数据处理。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36019989550113674,
+      "maxScore": 0.36019989550113674,
+      "firstRecalledAt": "2026-04-25T05:23:04.831Z",
+      "lastRecalledAt": "2026-04-25T05:23:04.831Z",
+      "queryHashes": [
+        "893d2ac09a5c"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "gateway",
+        "hindsight-docker",
+        "macos/linux",
+        "环境",
+        "通过",
+        "home",
+        "hindsight",
+        "docker"
+      ]
+    },
+    "memory:memory/2026-04-04.md:42:60": {
+      "key": "memory:memory/2026-04-04.md:42:60",
+      "path": "memory/2026-04-04.md",
+      "startLine": 42,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- 代理 `http://192.168.100.183:7890` 在系统长期休眠后可能需要重启（`curl -I google.com` 验证）。 ### 2026-04-04 21:54 (Session Memory Flush) **1. 任务执行状态 (Task Status):** - **目标**: 自动登录领星 ERP (erp.lingxing.com) 并处理登录验证码。 - **状态**: 成功登录。当前页面为领星 ERP 首页。 - **凭证信息**: 见 `TOOLS.md`（已持久化）。 **2. 关键纠错与教训 (Key Corrections & Learnings):** - **验证码处理缺陷**: 在处理“按顺序点击”图形验证码时，曾出现重试逻辑死循环（反复执行相同的错误选择器命令）。 - **标准流程修正**: - **识别**: 必须先截图，调用 `image` 工具识别图片内容（如“请依次点击：猫、狗、鸟”）。 - **执行**: 计算坐标，按顺序模拟点击，而非仅依赖 DOM 元素。 - **风控**: 必须设置最大重试次数（建议 3 次），超过则主动停止并请求人工干预，严禁陷入死循环。 **3. 环境信息 (Environment):** - 浏览器代理: 192.168.100.183:7890 (已在 `TOOLS.md` 中记录) - 登录账号: 17754926259",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3936327576637268,
+      "maxScore": 0.3936327576637268,
+      "firstRecalledAt": "2026-04-26T13:53:00.394Z",
+      "lastRecalledAt": "2026-04-26T13:53:00.394Z",
+      "queryHashes": [
+        "9649a7cd812d"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "192.168.100.183",
+        "google.com",
+        "erp.lingxing.com",
+        "tools.md",
+        "代理",
+        "http",
+        "系统",
+        "长期"
+      ]
+    }
+  }
+}
